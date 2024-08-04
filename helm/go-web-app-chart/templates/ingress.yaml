@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx  # Add this line to specify the IngressClass
   rules:
-  - host: awscloudops.shop
+  - host: go-web-app
     http:
       paths: 
       - path: /
