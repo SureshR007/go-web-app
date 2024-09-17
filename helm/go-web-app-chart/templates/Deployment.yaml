@@ -5,7 +5,7 @@ metadata:
   labels:
     app: go-web-app
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: go-web-app
@@ -19,8 +19,3 @@ spec:
           image: sureshryapani/go-web-app:{{ .Values.image.tag }}
           ports:
             - containerPort: 8080
-          resources:
-            requests:
-              cpu: "500m"  # Requesting 0.5 CPU cores
-            limits:
-              cpu: "2"     # Limiting to 2 CPU cores
